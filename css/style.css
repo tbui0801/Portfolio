@@ -1,0 +1,65 @@
+/*
+Google Font Notes: use 
+	font-family: 'Quicksand', sans-serif;
+*/
+
+html {
+	background-color: Peru;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;	
+}
+
+p {
+	text-align: center;
+}
+
+div {
+	display: block;
+}
+
+.navbar {
+	
+}
+
+.entirepage {
+	height: 100vh;
+}
+
+
+.landing {
+	height: 93vh;
+	width: 90vw;
+	margin: auto;
+}
+
+.profilepic {
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 50%;
+	max-width: 450px;
+	max-height: 450px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.heading {
+	margin: 15px;
+	font-size: 80px;
+}
+
+.descript {
+	margin-top: 0;
+	margin-left: 20vh;
+	margin-right: 20vh;
+	font-size: 60px;
+}
+
+.projects {
+	margin: 0;
+	background-color: blue;
+}
+
+
