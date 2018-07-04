@@ -4,6 +4,7 @@ Google Font Notes: use
 */
 
 
+
 html, body {
 	font-family: 'Quicksand', sans-serif;
 	margin: 0;	
@@ -16,13 +17,48 @@ p {
 	text-align: center;
 }
 
+.landing-1 {
+	height: 100%;
+	width: 100%;
+	background: url("../images/minimal.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
 .landing {
 	height: 100%;
 	width: 100%;
-	margin: auto;
-	background: url("../images/background.JPG");
+	background: url("../images/minimal.jpg");
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.landing-small {
+	height: 70%;
+	width: 100%;
+	background: url("../images/minimal.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+
+.section {
+	height: 80%;
+	width: 100%;
+	margin: auto;
+	background-color: black;
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -31,30 +67,14 @@ p {
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fadeinhello {
-	color: #ffffff;
-	font-size: 200px;
+	/*color: #ffffff;*/
+	font-size: 5vw;
 	margin: auto;
+	margin-top: 5%;
 	opacity: 0;
 	animation: fadeIn ease-in 1;
 	animation-fill-mode: forwards;
-	animation-duration: 2s
-}
-
-
-.navbar {
-	background-color: #7e4a35;
-}
-
-.navbar-p {
-	text-align: center;
-}
-
-.coverphoto {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #cab577;
-	height: 500px;
+	animation-duration: 2.5s
 }
 
 .profilepic {
@@ -64,21 +84,3 @@ p {
 	max-width: 450px;
 	max-height: 450px;
 }
-
-.heading {
-	margin: 20px;
-	font-size: 80px;
-}
-
-.descript {
-	margin-left: 20vh;
-	margin-right: 20vh;
-	font-size: 60px;
-}
-
-.projects {
-	margin: 0;
-	background-color: #838060;
-}
-
-
