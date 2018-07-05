@@ -17,51 +17,34 @@ p {
 	text-align: center;
 }
 
-.landing-1 {
-	height: 100%;
-	width: 100%;
-	background: url("../images/minimal.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-items: center;
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
 }
 
-.landing {
-	height: 100%;
-	width: 100%;
-	background: url("../images/minimal.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-items: center;
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.landing-small {
-	height: 70%;
-	width: 100%;
-	background: url("../images/minimal.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-items: center;
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
 }
-
-
-.section {
-	height: 80%;
-	width: 100%;
-	margin: auto;
-	background-color: black;
-	background-size: cover;
-	display: flex;
-	align-items: center;
+.parallax__layer--base {
+  transform: translateZ(0);
+  background-color: green;
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+  background-color:red;
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
