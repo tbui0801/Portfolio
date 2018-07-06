@@ -1,0 +1,50 @@
+/*https://keithclark.co.uk/articles/pure-css-parallax-websites/*/
+
+.parallax {
+  perspective: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallaxgroup {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallaxlayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*Defining the layers for Parallax*/
+/*Z-index determines order of importance*/
+/*Tranzlate is used to move layer further away*/
+/*Scale is to correct depth*/
+
+.base {
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.back {  
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.deep {
+  transform: translateZ(-2100px) scale(8);
+  z-index: 10
+}
+
+.fore {
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+
