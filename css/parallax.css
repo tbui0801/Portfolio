@@ -1,10 +1,11 @@
-/*https://keithclark.co.uk/articles/pure-css-parallax-websites/*/
+/*Parallax Code was modified from https://keithclark.co.uk/articles/pure-css-parallax-websites/*/
 
 .parallax {
-  perspective: 300px;
+  perspective: 0px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+
 }
 
 .parallaxgroup {
@@ -13,6 +14,13 @@
   transform-style: preserve-3d;
 }
 
+.parallaxgroup2 {
+  position: relative;
+  height: 50vh;
+  transform-style: preserve-3d;
+}
+
+
 .parallaxlayer {
   position: absolute;
   top: 0;
@@ -20,7 +28,6 @@
   bottom: 0;
   left: 0;
 }
-
 
 /*Defining the layers for Parallax*/
 /*Z-index determines order of importance*/
@@ -33,21 +40,11 @@
 }
 
 .back {  
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
+  transform: translateZ(-1px) scale(2);
+  z-index: 1;
 }
 
 .deep {
-  transform: translateZ(-2100px) scale(8);
-  z-index: 10
-}
-
-.fore {
-  transform: translateZ(90px) scale(0.7);
-  z-index: 1;
-}
-
-.deepfore {
-  transform: translateZ(150px) scale(0.5);
-  z-index: 1;
+  transform: translateZ(-2px) scale(1);
+  z-index: 2;
 }
